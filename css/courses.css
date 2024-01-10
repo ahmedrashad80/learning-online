@@ -1,0 +1,136 @@
+/*styling courses page */
+.bg-w {
+  background-color: var(--white-color);
+}
+.cards ul .nav-link {
+  background-color: white;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  color: black;
+}
+.nav-pills .nav-link.active {
+  background-color: var(--hover-color);
+}
+
+/*styling courses-details page */
+.content .container .cards .rate {
+  color: #f2d741f7;
+}
+.accordion .accordion-item {
+  background-color: var(--white-color);
+}
+.accordion .accordion-button {
+  font-size: 15px;
+  background-color: var(--white-color);
+  padding-left: 3rem;
+}
+.accordion .accordion-button:focus {
+  box-shadow: none;
+}
+.accordion .accordion-button:not(.collapsed) {
+  background-color: var(--white-color);
+  border-bottom: 1px solid #ccc;
+  box-shadow: none;
+  font-weight: 600;
+  color: var(--black-90);
+}
+.accordion .accordion-button::after {
+  background-image: none;
+  position: absolute;
+  content: "\f077";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  left: 1.5rem;
+}
+.accordion .accordion-button:not(.collapsed)::after {
+  transform: translateX(-50%) rotate(-180deg);
+}
+.accordion .accordion-collapse {
+  background-color: var(--white-color) !important;
+}
+.accordion .accordion-collapse a {
+  color: var(--black-90) !important;
+  background-color: var(--white-color) !important;
+  font-size: 14px;
+}
+.instructor-img {
+  width: 25%;
+}
+.progress-section span {
+  width: 3rem;
+}
+.progress-section .star {
+  color: var(--main-color);
+}
+.progress {
+  width: 18rem !important;
+  border-radius: 0;
+  height: 10px;
+  background-color: var(--body-bg-color);
+}
+.progress .progress-bar {
+  background-color: var(--decoration-bg-color-1);
+}
+.features .video {
+  position: relative;
+  overflow: hidden;
+}
+.features .video img {
+  width: 100%;
+  filter: blur(1px);
+}
+.features .video .info {
+  cursor: pointer;
+  width: 100%;
+  padding-top: 1.7rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.features .video p {
+  margin: 0.7rem 0 0 0;
+  color: white;
+  font-weight: 600;
+}
+.features .video .icon {
+  background-color: white;
+  height: 1.8rem;
+  width: 1.8rem;
+  margin: auto;
+  position: relative;
+}
+.features .video i {
+  position: absolute;
+  font-size: 3rem;
+  color: var(--main-color);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.price :nth-child(2) {
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+}
+.price :nth-child(3) {
+  color: var(--main-color);
+}
+.features ul li {
+  position: relative;
+}
+.features ul li::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--decoration-bg-color-1);
+  top: 50%;
+  transform: translatey(-50%);
+  left: -10px;
+}
+.features .btn {
+  color: white;
+  background-color: var(--decoration-bg-color-1);
+}

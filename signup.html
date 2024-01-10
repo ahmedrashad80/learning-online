@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ah-Courses</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/log.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      class="js-color-style"
+      href="css/colors/color-1.css"
+    />
+  </head>
+  <body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><span>AH</span>STUDY</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbarRight"
+          aria-controls="offcanvasNavbarRight"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbarRight"
+          aria-labelledby="offcanvasNavbarRightLabel"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-course"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Courses <i class="fa-solid fa-chevron-down fa-sm"></i>
+                </a>
+                <ul class="dropdown-menu p-0" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="courses.html">Courses</a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item border-bottom"
+                      href="courses-details.html"
+                      >Courses-Details</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages <i class="fa-solid fa-chevron-down fa-sm"></i>
+                </a>
+                <ul class="dropdown-menu p-0" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item pages" href="login.html">Log In</a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item pages border-bottom"
+                      href="signup.html"
+                      >Sign Up</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link change"><i class="far fa-moon"></i> Night</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+    <div class="content">
+      <div class="container">
+        <span class="fs-6"
+          ><a href="index.html" style="color: var(--main-color)">Home</a> /<a
+            href="signup.html"
+            style="color: var(--black-70)"
+            >Sign Up</a
+          ></span
+        >
+      </div>
+      <div class="container my-4 d-flex justify-content-center">
+        <div class="p-4 mb-2 shadow-sm rounded text-center form responsive">
+          <h4>Create Your Account</h4>
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="d-block w-100 mb-3"
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="d-block w-100 mb-3"
+          />
+          <input
+            type="password"
+            placeholder="Your Password"
+            class="d-block w-100 mb-3"
+          />
+          <button class="w-100 rounded">Sign Up</button>
+          <p>Already have an account?<a href="login.html"> Log In</a></p>
+        </div>
+      </div>
+      <footer class="px-5">
+        <div class="my-4">
+          <h5><span>AH</span>STUDY</h5>
+          <p mb-1>About</p>
+          <p mb-1>What We Offer</p>
+          <p mb-1>Certificates</p>
+        </div>
+        <div class="mt-4">
+          <h5>Learing</h5>
+          <p mb-1>Get The App</p>
+          <p mb-1>Pricing</p>
+          <p mb-1>Faq</p>
+        </div>
+        <div class="my-4">
+          <h5>More</h5>
+          <p mb-1>Traning Webinars</p>
+          <p mb-1>Help And Support</p>
+          <p mb-1>Free Test</p>
+        </div>
+
+        <div class="my-4">
+          <h5>Media</h5>
+          <p mb-1>
+            <i class="fa-brands fa-facebook" style="color: #4907e4"></i>
+            Facebook
+          </p>
+          <p mb-1>
+            <i class="fa-sharp fa-solid fa-x color-x"></i>
+            X-Twitter
+          </p>
+          <p mb-1>
+            <i class="fa-brands fa-youtube" style="color: #f50f32"></i>
+            Youtube
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

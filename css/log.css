@@ -1,0 +1,83 @@
+.responsive {
+  width: 30%;
+  background-color: var(--white-color);
+}
+.bg-w {
+  background-color: var(--white-color);
+}
+@media (max-width: 1199px) {
+  .responsive {
+    width: 40%;
+  }
+}
+@media (max-width: 992px) {
+  .responsive {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .responsive {
+    width: 70%;
+  }
+}
+@media (max-width: 576px) {
+  .responsive {
+    width: 85%;
+  }
+}
+.form input {
+  height: 2.2rem;
+  padding: 0.4rem;
+  border: 1px solid #777;
+  outline: none;
+  border-radius: 4px;
+  margin: 1.5rem 0;
+}
+.form span {
+  color: var(--main-color);
+  display: block;
+  margin-top: -0.8rem;
+  font-size: 12px;
+  text-align: right;
+}
+.form button {
+  height: 2.2rem;
+  padding: 0.4rem;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: var(--main-color);
+  margin: 1.5rem 0;
+}
+.form a {
+  color: var(--main-color);
+  font-size: 14px;
+}
+
+/* content page */
+textarea {
+  resize: none;
+  padding: 0.4rem;
+  border: 1px solid #777;
+  outline: none;
+  border-radius: 4px;
+}
+.info h6,
+.info p {
+  margin: 0;
+}
+
+.info i {
+  font-size: 1rem;
+  color: white;
+  background-color: var(--main-color);
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h4 {
+  color: var(--black-90);
+}

@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--body-bg-color);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  color: var(--p-color);
+}
+
+:root {
+  --main-color: #f85454;
+  --hover-color: #f70101;
+  --body-bg-color: #fcf3f3;
+  --border-color: #f4e6e6;
+  --body-gradient-bg-color-1: #ff000033;
+  --body-gradient-bg-color-2: #002aff33;
+  --decoration-bg-color-1: #ff6666;
+  --decoration-bg-color-2: #667fff;
+  --shadow: 0 0 10px #f0dbdb;
+  --blak-90: #1a1a1a;
+  --blak-70: #1a1a1a9d;
+  --bg-toggle: #fcf3f3;
+  --p-color: #6c757dd9;
+  --white-color: #fff;
+}
+
+.navbar .navbar-nav a {
+  color: var(--blak-90);
+  min-width: 5rem;
+}
+.navbar .navbar-nav a:hover {
+  color: var(--hover-color);
+}
+
+.dropdown-menu {
+  border: none;
+  border-radius: 0;
+  background-color: var(--body-bg-color);
+}
+
+.navbar .navbar-nav .dropdown .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.dropdown-menu .pages {
+  letter-spacing: 1px;
+}
+
+.dropdown-menu a:hover {
+  background-color: transparent;
+}
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.navbar .navbar-brand span {
+  color: var(--main-color);
+}
+
+.offcanvas-end {
+  background-color: transparent;
+  backdrop-filter: blur(40px);
+  max-width: 19rem;
+}
+.offcanvas-header {
+  border-bottom: 1px solid var(--border-color);
+}
+.offcanvas-header button {
+  background-color: var(--main-color);
+}
+@media (max-width: 991px) {
+  .navbar .navbar-nav a {
+    padding: 1rem;
+    margin: 0;
+    border-bottom: 1.5px solid var(--border-color);
+  }
+
+  .navbar .navbar-nav .dropdown-menu a {
+    display: inline-block;
+    border-bottom-color: transparent;
+    padding: 0.2rem 1.9rem;
+  }
+  .dropdown-menu {
+    background-color: transparent;
+  }
+  .offcanvas-end a {
+    font-size: 1.1rem;
+  }
+
+  .offcanvas-body {
+    padding: 0;
+  }
+  .offcanvas-body li {
+    margin: 0;
+  }
+}
+.navbar-toggler {
+  background-color: var(--bg-toggle);
+}
+.navbar-brand:focus,
+.navbar-brand:hover {
+  color: var(--blak-90);
+}
+/* /////////////////// */
+
+/* content */
+.content .container .intro button {
+  background-color: var(--main-color);
+  color: white;
+}
+.content .container .intro h6 {
+  color: var(--main-color);
+}
+.content .container .intro h2 {
+  font-weight: bold;
+}
+.content .container .intro p {
+  line-height: 1.6;
+}
+.content .container .intro img {
+  width: 20rem;
+  position: relative;
+}
+.content .container .intro .img {
+  position: relative;
+}
+.content .container .intro .img::after {
+  position: absolute;
+  content: "";
+  width: 25rem;
+  height: 22rem;
+  border-radius: 50% 50% 35% 35%;
+  background-color: var(--decoration-bg-color-1);
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: -2;
+}
+.content .container .stats {
+  background-color: var(--border-color);
+  margin: 4rem 1.5rem;
+  border-radius: 10px;
+}
+
+.content .container .stats p {
+  margin: 0;
+}
+.content .container .stats h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .content .container .stats .info {
+    margin-bottom: 1rem;
+  }
+  .content .container .stats h3 {
+    margin: 0;
+  }
+}
+.content .container .card {
+  border: none;
+  background-color: transparent;
+  position: relative;
+}
+.content .container .card::after {
+  position: absolute;
+  content: "$49";
+  width: 2.7rem;
+  height: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  color: white;
+  background-color: var(--main-color);
+  font-size: 15px;
+  font-weight: 600;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+.content .container .title span {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--main-color);
+  display: block;
+  margin-bottom: 1rem;
+}
+.content .container .cards a {
+  background-color: var(--main-color);
+  color: white;
+  width: fit-content;
+  margin: 2.5rem auto;
+}
+.content .container .card span {
+  font-size: 12px;
+}
+.content .container .card > span {
+  font-size: 15px;
+  font-weight: 600;
+}
+.content .container .card .rate {
+  color: #f2d741f7;
+}
+.content .container .card-body img {
+  width: 1.5rem;
+}
+.carousel .carousel-item img {
+  width: 9rem;
+  border-radius: 50%;
+  margin-bottom: 2rem !important;
+  margin-top: 2rem !important;
+  position: relative;
+}
+.carousel .carousel-item ::before {
+  position: absolute;
+  content: "";
+  width: 9.5rem;
+  height: 9.5rem;
+  border: 2px solid var(--hover-color);
+  border-radius: 50%;
+  top: 1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.carousel .carousel-item ::after {
+  position: absolute;
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  top: 25%;
+  left: 85%;
+  background-color: var(--main-color);
+}
+
+.carousel .carousel-item div {
+  width: 60%;
+}
+.carousel .carousel-item div p {
+  font-size: 14px;
+}
+.carousel-control-prev {
+  background-color: var(--main-color);
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  position: relative;
+  top: 100%;
+  left: 47%;
+  transform: translateX(-50%);
+}
+.carousel-control-next {
+  background-color: var(--main-color);
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  position: relative;
+  top: -1.7rem;
+  left: 49%;
+  transform: translateX(50%);
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+footer span {
+  color: var(--main-color);
+}
+footer p {
+  margin-bottom: 0.4rem;
+}
+footer .color-x {
+  color: var(--blak-90);
+}
+
+.themes-dark {
+  --main-color: #f85454;
+  --hover-color: #897e7e;
+  --body-bg-color: black;
+  --border-color: #f2eaea14;
+  --body-gradient-bg-color-1: #ff000033;
+  --body-gradient-bg-color-2: #002aff33;
+  --decoration-bg-color-1: #ff6666;
+  --decoration-bg-color-2: #667fff;
+  --shadow: 0 0 10px #212020;
+  --blak-90: #fff;
+  --blak-70: #fff;
+  color: #fff;
+  --bg-toggle: #fff;
+  --p-color: #6c757dd9;
+  --white-color: #343a40;
+}
