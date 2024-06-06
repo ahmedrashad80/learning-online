@@ -1,7 +1,6 @@
+const roots = document.querySelectorAll("*");
+const changeTheme = document.querySelector(".change");
 function toggleDarkMode() {
-  const roots = document.querySelectorAll("*");
-  const changeTheme = document.querySelector(".change");
-
   const isDarkMode = localStorage.getItem("darkMode") === "true";
 
   roots.forEach((root) => {
